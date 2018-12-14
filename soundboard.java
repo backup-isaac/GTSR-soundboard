@@ -41,7 +41,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class soundboard extends Application {
+public class oundboard extends Application {
 
 	public static void main(String[] args) {
 		launch(args);
