@@ -1,48 +1,45 @@
-//Imports
-	import javafx.application.Application;
-	import javafx.scene.image.Image;
-	import javafx.scene.image.ImageView;
-	import javafx.scene.paint.Color;
-	import javafx.scene.paint.CycleMethod;
-	import javafx.scene.paint.LinearGradient;
-	import javafx.scene.paint.Stop;
-	import javafx.scene.shape.Rectangle;
-	import javafx.scene.text.Font;
-	import javafx.scene.text.FontWeight;
-	import javafx.scene.text.Text;
-	import javafx.collections.FXCollections;
-	import javafx.collections.ObservableList;
-	import javafx.scene.chart.LineChart;
-	import javafx.scene.chart.NumberAxis;
-	import javafx.scene.chart.XYChart;
-	import javafx.beans.value.ChangeListener;
-	import javafx.beans.value.ObservableValue;
-	import javafx.scene.media.Media;
-	import javafx.scene.media.MediaPlayer;
-	import javafx.scene.control.cell.PropertyValueFactory;
-	import javafx.scene.control.cell.TextFieldTableCell;
-	import javafx.scene.control.TableColumn.CellEditEvent;
-	import javafx.event.ActionEvent;
-	import javafx.event.EventHandler;
-	import javafx.stage.*;
-	import javafx.scene.*;
-	import javafx.scene.layout.*;
-	import javafx.scene.control.*;
-	import javafx.geometry.*;
-	import javafx.scene.shape.*;
-	import javafx.scene.effect.*;
-	import javafx.scene.paint.*;
-	import javafx.scene.text.*;
+import javafx.application.Application;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.CycleMethod;
+import javafx.scene.paint.LinearGradient;
+import javafx.scene.paint.Stop;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.control.TableColumn.CellEditEvent;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 
-	import java.io.BufferedReader;
-	import java.io.FileNotFoundException;
-	import java.io.FileReader;
-	import java.io.IOException;
-
-	import java.util.*;
-	import java.lang.Number;
-	import java.lang.Math;
-	import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class soundboard extends Application {
 
@@ -219,7 +216,7 @@ public class soundboard extends Application {
 			MediaPlayer fuckinProblems = new MediaPlayer(
 				new Media(new File(
 					"resources/fireworks.mp3").toURI().toString()));
-		
+
 			fuckinProblems.play();
 		});
 	}
