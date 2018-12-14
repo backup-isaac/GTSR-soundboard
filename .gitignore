@@ -1,0 +1,10 @@
+# IDE/editor files
+*~
+.vscode/
+
+# Mac
+.DS_Store
+*/Thumbs.db
+
+# Build artifacts
+*.class
