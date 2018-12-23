@@ -50,9 +50,10 @@ public class Soundboard extends Application {
 		SoundboardItem shiet = new SoundboardItem("Shieeeeeeet...");
 		SoundboardItem scrutineering = new SoundboardItem("Scrutineering shieeeeeeet...");
 		SoundboardItem mppt = new SoundboardItem("MPPT, MPPT, MPPT...");
+		SoundboardItem cunefare = new SoundboardItem("Dr. Cunefare's Research");
 
 		flow.getChildren().addAll(bmsTripping, getDaWater, fak, think,
-			shiet, scrutineering, mppt);
+			shiet, scrutineering, mppt, cunefare);
 		flow.setAlignment(Pos.CENTER);
 
 		ScrollPane sp = new ScrollPane();

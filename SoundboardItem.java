@@ -18,7 +18,7 @@ public class SoundboardItem extends VBox {
     public SoundboardItem(String displayName) {
         super(10);
         this.name = displayName.toLowerCase().replaceAll(" ", "_")
-            .replaceAll("[!?,.]", "");
+            .replaceAll("[!?,.']", "");
         Button button = new Button();
         button.setPrefSize(200, 200);
         ImageView image = new ImageView("resources/" + this.name + ".png");
